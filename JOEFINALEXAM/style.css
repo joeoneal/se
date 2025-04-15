@@ -1,0 +1,165 @@
+/* Structual Elements Go Here */
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr repeat(6, 175px) 1fr;
+
+}
+
+#home{
+    height: 450px;
+    background-image: url(images/solarsystem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+main{
+    grid-column: 3/8;
+    padding: 20px;
+}
+
+footer {
+    font-size: .50rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #2d5ba6;
+    color: #fff
+}
+
+
+
+
+/* Navigation Elements Go Here */
+nav{
+    grid-column: 2/3;
+    background-color: #edeeef;
+    background-image: url(images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    padding-top: 150px;
+    background-position: center 15px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-flow: column;
+
+}
+
+nav ul li{
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    width: 100%;
+    color: #555;
+    list-style: block;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: #fff;
+    color: #d53631;
+}
+
+/* Styling Elements Go Here */
+#leftmargin{
+    background-color: #edeeef;
+    grid-column: 1/2;
+    width: auto;
+    height: auto;
+}
+
+#rightmargin{
+    background-color: #edeeef;
+    grid-column: 8/9;
+    width: auto;
+    height: auto;
+
+}
+
+
+h1{
+    grid-column: 3/8;
+    font-size: 16pt;
+    font-family: Arial, sans-serif;
+}
+
+main img {
+    float: right;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+main video {
+    width: 100%;
+}
+
+/* Media Query of 960 and less goes here */
+
+@media only screen and (max-width: 960px) {
+    main, footer{
+        grid-column: 2/-2;
+        flex-flow: wrap nowrap;
+    }
+
+    main img{
+        width: 100%;
+        padding: 0px;
+        float: none;
+
+    }
+
+    nav{
+        grid-column: 2/-2;
+        background-position: left;
+        flex-flow: wrap nowrap;
+        
+    }
+
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        flex-flow: row;
+        float: right;
+        gap: 130px;
+        padding-right: 30px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
